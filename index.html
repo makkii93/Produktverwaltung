@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Produktverwaltung</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Produktverwaltung</h1>
+     <!-- Suchen von Produkten -->
+     <form action="index.php" method="GET">
+        <h2>Produkt suchen</h2>
+        <label for="search">Produktname:</label>
+        <input type="text" id="search" name="search">
+        <input type="submit" value="Suchen">
+    </form>
+
+    <!-- Anlegen von Produkten -->
+    <form action="index.php" method="POST">
+        <h2>Neues Produkt anlegen</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br>
+        <label for="description">Beschreibung:</label>
+        <input type="text" id="description" name="description"><br>
+        <label for="price">Preis:</label>
+        <input type="text" id="price" name="price"><br>
+        <input type="submit" value="Anlegen">
+    </form>
+
+    <!-- Bearbeiten von Produkten -->
+    <form action="index.php" method="POST">
+        <h2>Produkt bearbeiten</h2>
+        <label for="editID">Produkt-ID:</label>
+        <input type="text" id="editID" name="editID"><br>
+        <!-- Weitere Felder zum Bearbeiten -->
+        <input type="submit" value="Bearbeiten">
+    </form>
+
+    <!-- Drucken von Produktlisten -->
+    <form action="index.php" method="GET">
+        <h2>Produktliste drucken</h2>
+        <!-- Druckoptionen, falls benötigt -->
+        <input type="submit" value="Drucken">
+    </form>
+</body>
+</html>

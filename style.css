@@ -1,0 +1,44 @@
+/* Setze die Schriftart für den gesamten Text des Dokuments auf Arial oder eine Sans-Serif-Alternative */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0; /* Setze den Außenabstand des Body-Elements auf 0 */
+    display: flex;
+    flex-direction: column; /* Setze die Ausrichtung des Inhalts auf vertikal, um die Überschrift oben und den Rest darunter anzuordnen */
+    justify-content: flex-start; /* Zentriere den Seiteninhalt vertikal */
+    align-items: center; /* Zentriere den Seiteninhalt horizontal */
+    height: 100vh; /* Setze die Höhe des Body-Elements auf die volle Bildschirmhöhe */
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin-top: 20px; /* Abstand oben zur besseren Lesbarkeit hinzufügen */
+}
+
+.form-container {
+    width: 300px;
+    margin-top: 20px; /* Abstand zwischen der Überschrift und dem Formular hinzufügen */
+    text-align: center; /* Zentriere den Text im Formular */
+    background-color: white; /* Füge einen weißen Hintergrund zum Formularcontainer hinzu */
+    padding: 20px; /* Füge Innenabstand zum Formularcontainer hinzu */
+    border-radius: 8px; /* Runde die Ecken des Formularcontainers ab */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Füge einen Schatten für das Formular hinzu */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px; /* Füge einen 5px Abstand zwischen Label-Elementen hinzu */
+    width: 300px;
+}
+
+/* Definiere das Aussehen von Text- und Submit-Inputfeldern */
+input[type="text"],
+input[type="submit"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    text-align: center;
+}
